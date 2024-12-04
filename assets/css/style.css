@@ -755,16 +755,6 @@ section {
   color: #173b6c;
 }
 
-/* .contact .info .email,
-.contact .info .phone {
-  border-radius: 10px;
-  background: #fff;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
-  padding: 5px 10px;
-  width: min-content;
-} */
-
-
 .contact .info .email:hover i,
 .contact .info .phone:hover i {
   background: #149ddd;
