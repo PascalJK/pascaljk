@@ -5,29 +5,11 @@ const portfolioItems = [
         title: "PlannurX",
         subtitle: "Mobile App (Xamarin)",
         description:
-            "A simple application for saving notes, projects and a todo-list. Did I mention the 2 games and a build-in webview?👀",
+            "An app for managing notes, projects, and to-do lists, with added fun: 2 games and a built-in webview feature.👀",
         links: [
             {
                 href: "https://play.google.com/store/apps/details?id=com.lpTech.plannurx",
                 icon: "bx bxl-play-store",
-            },
-        ],
-    },
-    {
-        filter: "filter-game",
-        img: "https://firebasestorage.googleapis.com/v0/b/iportfolio-70a2f.appspot.com/o/namquiz.png?alt=media&token=d37ba850-f002-46d6-9ef9-8380bb9205a4",
-        title: "NamQuiz",
-        subtitle: "Game (Unity)",
-        description:
-            "My first Unity game I developed and published on the Google Play Store for testing purposes. The game was populated with simple (hard coded) quiz questions. Users received rewards at the completion of a level. However, the user could also purchase power-ups.",
-        links: [
-            {
-                href: "https://play.google.com/store/apps/details?id=com.jokiesGameDev.NamQuiz",
-                icon: "bx bxl-play-store",
-            },
-            {
-                href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
-                icon: "bx bxl-youtube",
             },
         ],
     },
@@ -37,7 +19,7 @@ const portfolioItems = [
         title: "WhatsStatusApp",
         subtitle: "Mobile + Windows App (Maui)",
         description:
-            "A replication of the WhatsApp Status. Users can add text with URLs that the application detects and opens in a WebView popup.",
+            "Replicates WhatsApp Status with added functionality: text with clickable URLs that open in a WebView popup.",
         links: [
             {
                 href: "https://play.google.com/store/apps/details?id=com.lacsapTech.whatsstatusapp",
@@ -55,7 +37,7 @@ const portfolioItems = [
         title: "Covid Run",
         subtitle: "Game (Unity)",
         description:
-            "A game similar to Subway Surfers where the player must avoid COVID obstacles and collect masks to buy power-ups. Developed during the early weeks of COVID to raise awareness while also being entertaining.",
+            "A fun and educational game where players avoid COVID obstacles and collect masks to earn power-ups, raising awareness during the pandemic.",
         links: [
             {
                 href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
@@ -69,7 +51,7 @@ const portfolioItems = [
         title: "ZigZag Level",
         subtitle: "Game (Unity)",
         description:
-            "A game where you evade platforms with traps while trying to keep the ball from falling off. Reaching the platform that matches the starting platform's color unlocks a new level.",
+            "A challenging game where players avoid traps and keep the ball on the platform, unlocking new levels with matching colors.",
         links: [
             {
                 href: "https://play.google.com/store/apps/details?id=com.lacsapGames.ZigZagLevel",
@@ -87,7 +69,7 @@ const portfolioItems = [
         title: "Argon Assault",
         subtitle: "PC Game (Unity)",
         description:
-            "A space shooter game where you fly through space, follow a timeline, and shoot enemy ships.",
+            "A space shooter where players navigate through space, follow a story, and battle enemy ships.",
         links: [
             {
                 href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
@@ -101,7 +83,7 @@ const portfolioItems = [
         title: "JsonApp",
         subtitle: "Mobile App (Xamarin)",
         description:
-            "A mobile application designed to teach students how to consume REST API services. The fetched data could be saved locally. The app contained bugs for students to identify and fix as part of their learning process.",
+            "An educational app for learning how to consume REST APIs, with local data storage and bugs to fix as part of the learning process.",
         links: [
             {
                 href: "https://github.com/PascalJK/JsonApp",
@@ -115,19 +97,61 @@ const portfolioItems = [
         title: "Project Boost",
         subtitle: "PC Game (Unity)",
         description:
-            "A game where you maneuver a rocket from one platform to another without crashing. Includes cheat codes and five levels of increasing difficulty.",
+            "A rocket maneuvering game with five levels and cheat codes to enhance the gameplay experience.",
         links: [
-            {
-                href: "https://github.com/pascaljk",
-                icon: "bx bxl-github",
-            },
             {
                 href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
                 icon: "bx bxl-youtube",
             },
         ],
     },
+    {
+        filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/flutter.png",
+        title: "Budget App",
+        subtitle: "Mobile App (Flutter)",
+        description:
+            "A simple budgeting app that helps users track their income and expenses with ease.",
+        links: [],
+    },
+    {
+        filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/flutter.png",
+        title: "Vigilance",
+        subtitle: "Mobile App (Flutter)",
+        description:
+            "A community safety app allowing users to report real-time safety concerns and alerts.",
+        links: [],
+    },
+    {
+        filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/flutter.png",
+        title: "AgriApp",
+        subtitle: "Mobile App (Flutter)",
+        description:
+            "A concept app for viewing and bidding on livestock at auctions, designed for the agricultural market.",
+        links: [],
+    },
+    {
+        filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/flutter.png",
+        title: "Food Delivery",
+        subtitle: "Mobile App (Flutter)",
+        description:
+            "A food delivery app that lets users order meals, simulate payments, and track their order history.",
+        links: [],
+    },
+    {
+        filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/flutter.png",
+        title: "Digital Wallet App",
+        subtitle: "Mobile App (Flutter)",
+        description:
+            "A concept digital wallet app for managing payments, with features like fund top-up simulations.",
+        links: [],
+    },
 ];
+
 
 
 const portfolioContainer = document.getElementById("portfolio-container");
