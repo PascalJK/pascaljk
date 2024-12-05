@@ -685,81 +685,38 @@ section {
 .contact .button {
   font-size: 20px;
   color: #e4edf9;
-  background-color: #040B14;
-  text-align: center;
-  padding: 15px;
-  border-radius: 15px;
-  transition: all 0.5s;
+  background-color: #040B14;border-radius: 15px;
+  padding: 5px 15px;
   cursor: pointer;
-  margin: 5px;
-}
-
-.contact .button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.contact .button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.contact .button:hover span {
-  padding-right: 25px;
-}
-
-.contact .button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-.contact .info {
-  padding: 10px;
-  /* background: #fff; */
-  /* width: 100%; */
-  /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
-}
-
-.contact .info i {
-  font-size: 20px;
-  color: #149ddd;
-  float: left;
-  width: 50px;
-  height: 50px;
-  background: #dff3fc;
+  outline: none;
+  font-size: 30px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease;
 }
 
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 1px;
-  color: #050d18;
+.contact .button .bi {
+  transition: margin-right 0.3s ease;
 }
 
-.contact .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 0px;
-  font-size: 14px;
-  color: #173b6c;
+.contact .button .text {
+  overflow: hidden;
+  max-width: 0;
+  font-size: 15px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
-.contact .info .email:hover i,
-.contact .info .phone:hover i {
-  background: #149ddd;
-  color: #fff;
+.contact .button:hover .bi {
+  margin-right: 10px;
 }
+
+.contact .button:hover .text {
+  max-width: fit-content;
+  opacity: 1;
+}
+
 
 @-webkit-keyframes animate-loading {
   0% {
