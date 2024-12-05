@@ -1,9 +1,9 @@
 const skills = [
     { name: "C#", value: 63 },
-    { name: "Xamarin", value: 71 },
+    { name: "Xamarin", value: 69 },
     { name: ".Net Maui", value: 62 },
     { name: "Html & Css", value: 47 },
-    { name: "Cloud Services", value: 67 },
+    { name: "Firebase Cloud Services", value: 67 },
     { name: "Game Development (Unity)", value: 68 },
     { name: "Flutter & Dart", value: 83 },
     { name: "Problem Solving & Logical Thinking", value: 82 },

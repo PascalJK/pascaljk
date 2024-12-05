@@ -1,27 +1,17 @@
 const aboutData = {
-    sectionTitle: "About Me",
-    description: `A self-taught software developer with over 5 years of experience,
-                I have always been driven by an insatiable curiosity and a
-                deep-seated passion for technology. My journey in the tech
-                industry began with a single line of code and has since evolved
-                into a fulfilling career where I've had the opportunity to work on
-                a diverse range of projects. Innovation is at the heart of
-                everything I do. I'm constantly looking for ways to improve, to
-                grow, and to make a real impact in the tech industry. I'm not just
-                writing code, I'm creating the digital future.`,
-    profileImage: "./assets/img/profile.jpg",
-    role: "Innovator",
-    quote: `As a software engineer that's passionate about my work, I enjoy
-          spending my time developing prototypes that I believe could
-          solve real-world problems then presenting my work to interested
-          parties/investors.`,
-    personalInfo: {
-        birthYear: 1998,
-        phone: "+264 81 720 1880",
-        email: "pascal.santos@hotmail.com",
-        city: "Windhoek, Namibia"
-    }
+  sectionTitle: "About Me",
+  description: `I am a self-taught software developer with over 5 years of experience, driven by a deep passion for technology and innovation. My journey began with a single line of code, sparking an insatiable curiosity that has guided me through a fulfilling career. I've had the privilege of working on diverse projects, from mobile applications to hybrid platforms that bridge e-commerce and business spaces. For me, innovation is not just a goal—it's a way of life. I aim to craft solutions that address real-world challenges, shaping a digital future where technology meets meaningful impact.`,
+  profileImage: "./assets/img/profile.jpg",
+  role: "Innovator & Developer",
+  quote: `As a software engineer passionate about my craft, I thrive on creating innovative prototypes and solutions that address real-world challenges. Sharing my work with stakeholders and investors is part of my mission to bring impactful ideas to life.`,
+  personalInfo: {
+    birthYear: 1998,
+    phone: "+264 81 720 1880",
+    email: "pascal.santos@hotmail.com",
+    city: "Windhoek, Namibia"
+  }
 };
+
 
 const calculateAge = (birthYear) => {
     const currentYear = new Date().getFullYear();
