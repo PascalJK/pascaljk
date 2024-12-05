@@ -22,7 +22,7 @@ const stats = [
         icon: "bi bi-emoji-smile-fill",
         value: 21,
         label: "Clients",
-        detail: "(that I can remember)"
+        detail: "I have worked or partnered with."
     }
 ];
 
