@@ -158,3 +158,19 @@ portfolioItems.forEach((item) => {
 
     portfolioContainer.innerHTML += portfolioItemHtml;
 });
+
+
+// Function to filter portfolio items
+// function filterPortfolio(filter) {
+//     if (filter === "all") {
+//         renderPortfolio(portfolioItems);
+//     } else {
+//         const filteredItems = portfolioItems.filter((item) => item.filter === filter);
+//         renderPortfolio(filteredItems);
+//     }
+// }
+
+// Initial render
+// filterPortfolio("all");
+
+
