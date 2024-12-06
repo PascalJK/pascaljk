@@ -39,10 +39,10 @@ const portfolioItems = [
         description:
             "A fun and educational game where players avoid COVID obstacles and collect masks to earn power-ups, raising awareness during the pandemic.",
         links: [
-            {
-                href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
-                icon: "bx bxl-youtube",
-            },
+            // {
+            //     href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
+            //     icon: "bx bxl-youtube",
+            // },
         ],
     },
     {
@@ -57,10 +57,10 @@ const portfolioItems = [
                 href: "https://play.google.com/store/apps/details?id=com.lacsapGames.ZigZagLevel",
                 icon: "bx bxl-play-store",
             },
-            {
-                href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
-                icon: "bx bxl-youtube",
-            },
+            // {
+            //     href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
+            //     icon: "bx bxl-youtube",
+            // },
         ],
     },
     {
@@ -71,10 +71,10 @@ const portfolioItems = [
         description:
             "A space shooter where players navigate through space, follow a story, and battle enemy ships.",
         links: [
-            {
-                href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
-                icon: "bx bxl-youtube",
-            },
+            // {
+            //     href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
+            //     icon: "bx bxl-youtube",
+            // },
         ],
     },
     {
@@ -99,10 +99,10 @@ const portfolioItems = [
         description:
             "A rocket maneuvering game with five levels and cheat codes to enhance the gameplay experience.",
         links: [
-            {
-                href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
-                icon: "bx bxl-youtube",
-            },
+            // {
+            //     href: "https://www.youtube.com/watch?v=vORQBy_1vnA&ab_channel=gameranx",
+            //     icon: "bx bxl-youtube",
+            // },
         ],
     },
     {
