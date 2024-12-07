@@ -3,7 +3,7 @@ const aboutData = {
   description: `I am a self-taught software developer with over 5 years of experience, driven by a deep passion for technology and innovation. My journey began with a single line of code, sparking an insatiable curiosity that has guided me through a fulfilling career. I've had the privilege of working on diverse projects, from mobile applications to hybrid platforms that bridge e-commerce and business spaces. For me, innovation is not just a goal—it's a way of life. I aim to craft solutions that address real-world challenges, shaping a digital future where technology meets meaningful impact.`,
   profileImage: "./assets/img/profile.jpg",
   role: "Innovator & Developer",
-  quote: `As a software engineer passionate about my craft, I thrive on creating innovative prototypes and solutions that address real-world challenges. Sharing my work with stakeholders and investors is part of my mission to bring impactful ideas to life.`,
+  quote: `As a software engineer passionate about my line of work, I thrive on creating innovative concepts and solutions that address real-world challenges. Sharing my work with stakeholders and investors is part of my mission to bring impactful ideas to life.`,
   personalInfo: {
     birthYear: 1998,
     phone: "+264 81 720 1880",
