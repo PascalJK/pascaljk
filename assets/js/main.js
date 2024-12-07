@@ -136,6 +136,12 @@
     });
   }
 
+  AOS.init({
+    disable: "mobile", // Disables AOS on mobile devices entirely
+    delay: 0           // Sets the delay to 0 globally
+  });
+
+
   /**
    * Skills animation
    */
