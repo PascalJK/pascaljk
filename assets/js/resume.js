@@ -136,11 +136,11 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML = `
     ${sectionTitle}
     <div class="row">
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-6" data-aos="fade-up">
         <h3 class="resume-title">Education</h3>
         ${pList(resumeData.education)}
       </div>
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-lg-6" data-aos="fade-up">
         <h3 class="resume-title">Experience</h3>
         ${pList(resumeData.experience)}
       </div>
