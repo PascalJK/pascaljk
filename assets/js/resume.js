@@ -1,14 +1,11 @@
 const resumeData = {
   title: "Resume",
-  downloadText: "Download my complete resume (PDF).",
-  downloadLink:
-    "https://firebasestorage.googleapis.com/v0/b/iportfolio-70a2f.appspot.com/o/Resume%2FMyCV.pdf?alt=media&token=8fbab353-ff7d-45eb-bfa4-9c1cc9ddacc6",
   education: [
     {
       title: "Self-Learning",
       year: "2020",
       description:
-        "Began self-teaching cross-platform mobile application development with C#, driven by a passion for innovation.",
+        "",
     },
     {
       title: "Udemy Courses",
@@ -106,16 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="section-title">
       <h2>${resumeData.title}</h2>
       <p>
-        Click
-        <a
-          href="${resumeData.downloadLink}"
-          download="my_resume_pdf_file"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          here
-        </a>
-        to download a copy of my resume (PDF).😉
+        From "Hello World" To Date.
       </p>
     </div>
   `;
