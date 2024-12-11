@@ -54,12 +54,11 @@ const services = [
 const servicesContainer = document.getElementById("services-container");
 
 services.forEach((service, index) => {
-    const delay = 100 + index * 100; // Adjust delay for animations
     const serviceHTML = `
       <div
         class="col-lg-4 col-md-6 align-items-stretch"
         data-aos="zoom-in"
-        data-aos-delay="${delay}"
+        data-aos-delay="100"
       >
         <div class="icon-box iconbox-blue">
           <div class="icon">
