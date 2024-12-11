@@ -135,12 +135,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // Add everything to the container
     container.innerHTML = `
     ${sectionTitle}
-    <div class="row">
-      <div class="col-lg-6" data-aos="fade-up">
+    <div class="row" data-aos="fade-up">
+      <div class="col-lg-6">
         <h3 class="resume-title">Education</h3>
         ${pList(resumeData.education)}
       </div>
-      <div class="col-lg-6" data-aos="fade-up">
+      <div class="col-lg-6">
         <h3 class="resume-title">Experience</h3>
         ${pList(resumeData.experience)}
       </div>
