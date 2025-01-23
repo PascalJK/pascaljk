@@ -5,7 +5,7 @@ const aboutData = {
   role: "Innovator & Developer",
   quote: `As a software engineer passionate about my line of work, I thrive on creating innovative concepts and solutions that address real-world challenges. Sharing my work with stakeholders and investors is part of my mission to bring impactful ideas to life.`,
   personalInfo: {
-    birthYear: 1998,
+    birthDate: "1998-06-18",
     phone: "+264 81 720 1880",
     email: "pascal.santos@hotmail.com",
     city: "Windhoek, Namibia"
@@ -13,9 +13,15 @@ const aboutData = {
 };
 
 
-const calculateAge = (birthYear) => {
-    const currentYear = new Date().getFullYear();
-    return currentYear - birthYear;
+const calculateAge = (birthDate) => {
+  const today = new Date();
+  const birthDateObj = new Date(birthDate);
+  let age = today.getFullYear() - birthDateObj.getFullYear();
+  const monthDifference = today.getMonth() - birthDateObj.getMonth();
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDateObj.getDate())) {
+    age--;
+  }
+  return age;
 };
 
 
@@ -40,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const contentCol = document.createElement("div");
     contentCol.className = "col-lg-8 pt-4 pt-lg-0 content";
     contentCol.setAttribute("data-aos", "fade-left");
-    const age = calculateAge(aboutData.personalInfo.birthYear);
+    const age = calculateAge(aboutData.personalInfo.birthDate);
     contentCol.innerHTML = `
     <h3>${aboutData.role}</h3>
     <p class="fst-italic">${aboutData.quote}</p>
