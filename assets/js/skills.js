@@ -1,12 +1,16 @@
 const skills = [
-    { name: "C#", value: 63 },
-    { name: "Xamarin", value: 69 },
-    { name: ".Net Maui", value: 62 },
-    { name: "Html & Css", value: 47 },
-    { name: "Firebase Cloud Services", value: 67 },
+    { name: "Flutter & Dart", value: 85 },
+    { name: "Odoo / ERP (Studio, Views, Scheduled Actions)", value: 72 },
+    { name: "C#", value: 68 },
+    { name: ".NET MAUI", value: 64 },
+    { name: "Xamarin", value: 70 },
+    { name: "POS & Hardware Integration (Thermal Printers, ZPL)", value: 70 },
+    { name: "REST & JSON-RPC API Integration", value: 75 },
+    { name: "Python", value: 58 },
+    { name: "Firebase Cloud Services", value: 68 },
     { name: "Game Development (Unity)", value: 68 },
-    { name: "Flutter & Dart", value: 83 },
-    { name: "Problem Solving & Logical Thinking", value: 82 },
+    { name: "Html & Css", value: 48 },
+    { name: "Problem Solving & Logical Thinking", value: 83 },
 ];
 
 const leftSkills = skills.slice(0, Math.ceil(skills.length / 2));

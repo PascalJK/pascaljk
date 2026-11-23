@@ -1,6 +1,33 @@
 const portfolioItems = [
     {
         filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/flutter.png",
+        title: "CustomPOS",
+        subtitle: "Mobile App (Flutter · Odoo)",
+        description:
+            "A Flutter Android app that bridges Odoo POS and sales data to native thermal-printer SDKs via a local HTTPS server and JSON-RPC API integration.",
+        links: [],
+    },
+    {
+        filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/web.png",
+        title: "Save the Chat",
+        subtitle: "Web Platform",
+        description:
+            "A lead-generation platform that turns saved Zoom chat text into structured contacts, helping users follow up on connections made during calls.",
+        links: [],
+    },
+    {
+        filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/shop.png",
+        title: "MarketerZ Hub",
+        subtitle: "Venture",
+        description:
+            "A venture aimed at helping businesses connect, trade, and grow.",
+        links: [],
+    },
+    {
+        filter: "filter-app",
         img: "https://firebasestorage.googleapis.com/v0/b/iportfolio-70a2f.appspot.com/o/plannurx-logo.png?alt=media&token=bb986330-2509-4515-bdbc-58c5d6ad0837",
         title: "PlannurX",
         subtitle: "Mobile App (Xamarin)",

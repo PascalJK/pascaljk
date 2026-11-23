@@ -1,9 +1,9 @@
 const aboutData = {
   sectionTitle: "About Me",
-  description: `I am a self-taught software developer with over 5 years of experience, driven by a deep passion for technology and innovation. My journey began with a single line of code, sparking an insatiable curiosity that has guided me through a fulfilling career. I've had the privilege of working on diverse projects, from mobile applications to hybrid platforms that bridge e-commerce and business spaces. For me, innovation is not just a goal—it's a way of life. I aim to craft solutions that address real-world challenges, shaping a digital future where technology meets meaningful impact.`,
+  description: `I am a self-taught software engineer with over 8 years of hands-on experience, driven by a deep passion for technology and innovation. My journey began with a single line of code and has grown from game development, into cross-platform mobile apps, and most recently into ERP and business-systems consulting. I currently work as a Systems & Solutions Developer at Synergy Business Solutions, building applications with Flutter and customizing Odoo deployments—including hardware and thermal-printer integrations—for SME clients. Alongside my employed work I've founded two ventures, driven by a love of building things that work and taking ownership of what I ship. For me, innovation is not just a goal—it's a way of life.`,
   profileImage: "./assets/img/profile.jpg",
-  role: "Innovator & Developer",
-  quote: `As a software engineer passionate about my line of work, I thrive on creating innovative concepts and solutions that address real-world challenges. Sharing my work with stakeholders and investors is part of my mission to bring impactful ideas to life.`,
+  role: "Solutions Developer & Technical Consultant",
+  quote: `As a software engineer and technical consultant, I thrive on solving real-world problems end-to-end—from writing the code to setting up the hardware on-site. Sharing my work with stakeholders and clients is part of my mission to bring impactful ideas to life.`,
   personalInfo: {
     birthDate: "1998-06-18",
     phone: "+264 81 720 1880",

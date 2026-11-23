@@ -2,27 +2,27 @@
 const stats = [
     {
         icon: "bi bi-clock-fill",
-        value: 52594,
+        value: 61000,
         label: "~ Hours",
         detail: "invested in my work."
     },
     {
         icon: "bi bi-briefcase-fill",
-        value: 103,
+        value: 118,
         label: "Projects",
         detail: "demos, tests and other projects."
     },
     {
         icon: "bi bi-check-circle-fill",
-        value: 19,
+        value: 24,
         label: "Projects Completed",
         detail: "fully functional applications."
     },
     {
         icon: "bi bi-emoji-smile-fill",
-        value: 21,
+        value: 28,
         label: "Clients",
-        detail: "I have worked or partnered with."
+        detail: "and SMEs I've worked or partnered with."
     }
 ];
 

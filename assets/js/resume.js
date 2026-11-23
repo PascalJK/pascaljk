@@ -90,6 +90,44 @@ const resumeData = {
       description:
         "Expanded into Flutter, developing over 13 mobile applications spanning e-commerce, agriculture, and community safety sectors. Specialized in creating responsive, cross-platform solutions.",
     },
+    {
+      title: "Freelance Developer & Consultant",
+      year: "2023 - Present",
+      description:
+        "Took on independent development and consulting projects alongside my other commitments.",
+    },
+    {
+      title: "Founder — MarketerZ Hub",
+      year: "2023 - Present",
+      description:
+        "Launched a venture aimed at helping businesses connect, trade, and grow.",
+    },
+    {
+      title: "Odoo Internship — Synergy Business Solutions",
+      year: "2025",
+      description:
+        "Completed a structured internship covering Odoo onboarding, Python development, and client support — leading directly to a full-time offer.",
+    },
+    {
+      title: "Systems & Solutions Developer — Synergy Business Solutions",
+      year: "2025 - Present",
+      description: `
+        Customizing and extending client Odoo deployments and integrating POS hardware for SME clients, with work including:
+        `,
+      points: [
+        "Odoo Studio customization — report templates, custom fields, scheduled & server actions.",
+        "Thermal label and receipt printer integration (Bixolon, Argox, Urovo) with Odoo POS & Inventory.",
+        "CustomPOS — a Flutter Android app bridging Odoo POS data to native printer SDKs via a local HTTPS server and JSON-RPC.",
+      ],
+      additionalInfo:
+        "Supporting multiple clients end-to-end, from on-site hardware setup to remote troubleshooting.",
+    },
+    {
+      title: "Founder — Save the Chat",
+      year: "2026 - Present",
+      description:
+        "Built and deployed a lead-generation platform that turns saved Zoom chat text into structured contacts, helping users follow up on connections made during calls.",
+    },
   ],
 };
 
