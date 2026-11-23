@@ -138,53 +138,82 @@ const resumeData = {
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("resume-container");
 
-    // Create the section title
     const sectionTitle = `
-    <div class="section-title">
+    <div class="section-title" data-aos="fade-up">
+      <span class="section-eyebrow">My journey</span>
       <h2>${resumeData.title}</h2>
-      <p>
-        From "Hello World" To Date.
-      </p>
+      <p>From "Hello World" to date — scroll each track to explore the timeline.</p>
     </div>
   `;
 
-    // Create the experiences section
-    const pList = (list) => list
-        .map(
-            (exp) => `
+    // A single timeline card
+    const itemHTML = (exp) => `
       <div class="resume-item">
-        <h4>${exp.title}</h4>
         <h5>${exp.year}</h5>
-        <p>${exp.description}</p>
+        <h4>${exp.title}</h4>
+        ${exp.description && exp.description.trim() ? `<p>${exp.description}</p>` : ""}
         ${exp.points
-                    ? `<ul>${exp.points.map((point) => `<li>${point}</li>`).join("")}</ul>`
-                    : ""
-                }
+                ? `<ul>${exp.points.map((point) => `<li>${point}</li>`).join("")}</ul>`
+                : ""
+            }
         ${exp.additionalInfo ? `<p>${exp.additionalInfo}</p>` : ""}
         ${exp.link
-                    ? `<ul><li>${exp.link.text}
-                  <a href="${exp.link.url}" target="_blank" rel="noopener noreferrer">${exp.link.subtext}</a><i class="${exp.link.icon}"></i>
-               </li></ul>`
-                    : ""
-                }
+                ? `<ul class="resume-link"><li>${exp.link.text}
+                <a href="${exp.link.url}" target="_blank" rel="noopener noreferrer">${exp.link.subtext}</a><i class="${exp.link.icon}"></i>
+             </li></ul>`
+                : ""
+            }
       </div>
-    `
-        )
-        .join("");
+    `;
 
-    // Add everything to the container
-    container.innerHTML = `
-    ${sectionTitle}
-    <div class="row" data-aos="fade-up">
-      <div class="col-lg-6">
-        <h3 class="resume-title">Education</h3>
-        ${pList(resumeData.education)}
+    // A horizontal timeline track (Education / Experience)
+    const block = (title, icon, list) => `
+    <div class="resume-block" data-aos="fade-up">
+      <div class="resume-block-head">
+        <h3 class="resume-title"><i class="${icon}"></i> ${title}</h3>
+        <div class="track-nav">
+          <button class="track-btn" data-dir="-1" aria-label="Scroll ${title} left">
+            <i class="bi bi-chevron-left"></i>
+          </button>
+          <button class="track-btn" data-dir="1" aria-label="Scroll ${title} right">
+            <i class="bi bi-chevron-right"></i>
+          </button>
+        </div>
       </div>
-      <div class="col-lg-6">
-        <h3 class="resume-title">Experience</h3>
-        ${pList(resumeData.experience)}
+      <div class="resume-track">
+        ${list.map(itemHTML).join("")}
       </div>
     </div>
   `;
+
+    container.innerHTML = `
+    ${sectionTitle}
+    ${block("Education", "bi bi-mortarboard-fill", resumeData.education)}
+    ${block("Experience", "bi bi-briefcase-fill", resumeData.experience)}
+  `;
+
+    // Wire the horizontal scroll arrows + enable/disable at the ends
+    container.querySelectorAll(".resume-block").forEach((blk) => {
+        const track = blk.querySelector(".resume-track");
+        const btns = blk.querySelectorAll(".track-btn");
+
+        const updateBtns = () => {
+            const maxScroll = track.scrollWidth - track.clientWidth - 2;
+            btns[0].classList.toggle("is-disabled", track.scrollLeft <= 2);
+            btns[1].classList.toggle("is-disabled", track.scrollLeft >= maxScroll);
+        };
+
+        btns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                const dir = parseInt(btn.getAttribute("data-dir"), 10);
+                const step = Math.min(track.clientWidth * 0.85, 360);
+                track.scrollBy({ left: dir * step, behavior: "smooth" });
+            });
+        });
+
+        track.addEventListener("scroll", updateBtns, { passive: true });
+        window.addEventListener("load", updateBtns);
+        updateBtns();
+    });
 });
 
