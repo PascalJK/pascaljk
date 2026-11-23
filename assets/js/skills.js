@@ -1,5 +1,6 @@
 const skills = [
     { name: "Flutter & Dart", value: 85 },
+    { name: "Next.js", value: 76 },
     { name: "Odoo / ERP (Studio, Views, Scheduled Actions)", value: 72 },
     { name: "EDI & B2B Order Integration (.NET)", value: 74 },
     { name: "C#", value: 68 },

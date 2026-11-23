@@ -128,7 +128,7 @@ const resumeData = {
       title: "Founder — Save the Chat",
       year: "2026 - Present",
       description:
-        "Built and deployed a lead-generation platform that turns saved Zoom chat text into structured contacts, helping users follow up on connections made during calls.",
+        "Built and deployed a lead-generation platform that turns saved Zoom chat text into structured contacts, helping users follow up on connections made during calls. Built with Next.js (web app) and Flutter (mobile and macOS apps).",
     },
   ],
 };

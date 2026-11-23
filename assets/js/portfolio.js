@@ -30,9 +30,9 @@ const portfolioItems = [
         filter: "filter-app",
         img: "https://img.icons8.com/fluency/100/web.png",
         title: "Save the Chat",
-        subtitle: "Web Platform",
+        subtitle: "Web · Mobile · macOS (Next.js · Flutter)",
         description:
-            "A lead-generation platform that turns saved Zoom chat text into structured contacts, helping users follow up on connections made during calls.",
+            "A lead-generation platform that turns saved Zoom chat text into structured contacts, helping users follow up on connections made during calls. Built with Next.js for the web app and Flutter for the mobile and macOS apps.",
         links: [],
     },
     {
