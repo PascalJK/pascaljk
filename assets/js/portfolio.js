@@ -1,11 +1,29 @@
 const portfolioItems = [
     {
         filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/data-configuration.png",
+        title: "Retail EDI Integration",
+        subtitle: "Enterprise Solution (.NET · Odoo)",
+        description:
+            "A .NET EDI platform that ingests purchase orders from major retail chains—collected from their trading portals or posted to our server—then validates each order through a multi-step pipeline before creating it as a sales order in Odoo.",
+        links: [],
+    },
+    {
+        filter: "filter-app",
         img: "https://img.icons8.com/fluency/100/flutter.png",
         title: "CustomPOS",
         subtitle: "Mobile App (Flutter · Odoo)",
         description:
             "A Flutter Android app that bridges Odoo POS and sales data to native thermal-printer SDKs via a local HTTPS server and JSON-RPC API integration.",
+        links: [],
+    },
+    {
+        filter: "filter-app",
+        img: "https://img.icons8.com/fluency/100/combo-chart.png",
+        title: "Odoo Companion Apps",
+        subtitle: "Mobile Apps (Flutter · Odoo)",
+        description:
+            "Standalone Flutter apps that live outside Odoo but integrate with it through its APIs, delivering custom analytics and reporting beyond Odoo's native capabilities.",
         links: [],
     },
     {

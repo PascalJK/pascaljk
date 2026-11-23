@@ -115,9 +115,11 @@ const resumeData = {
         Customizing and extending client Odoo deployments and integrating POS hardware for SME clients, with work including:
         `,
       points: [
+        "Built a .NET EDI solution that ingests purchase orders from major retail chains (Shoprite, Metro, Woermann Brock) — retrieved from their trading portals or posted directly to our server — and validates each order through a multi-step algorithm before creating it as a sales order in Odoo.",
         "Odoo Studio customization — report templates, custom fields, scheduled & server actions.",
         "Thermal label and receipt printer integration (Bixolon, Argox, Urovo) with Odoo POS & Inventory.",
         "CustomPOS — a Flutter Android app bridging Odoo POS data to native printer SDKs via a local HTTPS server and JSON-RPC.",
+        "Standalone Flutter apps that live outside Odoo but integrate with it via its APIs, delivering custom analytics and reporting beyond Odoo's native capabilities.",
       ],
       additionalInfo:
         "Supporting multiple clients end-to-end, from on-site hardware setup to remote troubleshooting.",
