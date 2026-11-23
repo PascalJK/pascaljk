@@ -138,11 +138,24 @@ const resumeData = {
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("resume-container");
 
+    // Order entries newest -> oldest (present day back to the start).
+    const yearKey = (s) => {
+        const nums = (String(s).match(/\d{4}/g) || []).map(Number);
+        const start = nums.length ? Math.min(...nums) : 0;
+        let end = nums.length ? Math.max(...nums) : 0;
+        if (/present/i.test(s)) end = 9999;
+        return { start, end };
+    };
+    const byRecent = (a, b) => {
+        const ka = yearKey(a.year), kb = yearKey(b.year);
+        return (kb.start - ka.start) || (kb.end - ka.end);
+    };
+
     const sectionTitle = `
     <div class="section-title" data-aos="fade-up">
       <span class="section-eyebrow">My journey</span>
       <h2>${resumeData.title}</h2>
-      <p>From "Hello World" to date — scroll each track to explore the timeline.</p>
+      <p>From my present day back to my "Hello World" days — scroll each track to explore.</p>
     </div>
   `;
 
@@ -181,7 +194,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       </div>
       <div class="resume-track">
-        ${list.map(itemHTML).join("")}
+        ${list.slice().sort(byRecent).map(itemHTML).join("")}
       </div>
     </div>
   `;
