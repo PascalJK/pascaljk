@@ -44,152 +44,159 @@
     />
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
-      rel="stylesheet"
-    />
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/glightbox/css/glightbox.min.css"
-      rel="stylesheet"
-    />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
+    <!-- Main Theme -->
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <!-- ======= Mobile nav toggle button ======= -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <!-- ======= Header / Navbar ======= -->
+    <header id="header" class="site-header">
+      <div class="container header-inner">
+        <a href="#hero" class="brand scrollto">
+          Pascal<span>Ntezimana</span>
+        </a>
 
-    <!-- ======= Header ======= -->
-    <header id="header">
-      <div class="d-flex flex-column">
-        <div class="profile">
-          <img src="./assets/img/profile.jpg" alt="" class="img" />
-          <h1 class="text-light"><a href="index.html">Pascal Ntezimana</a></h1>
-          <div class="social-links mt-3 text-center">
-            <!-- Calendly -->
-            <a href="https://calendly.com/pascal-santos/30min" class="Calendly"
-              ><i
-                class="bx bx-calendar"
-                target="_blank"
-                rel="noopener noreferrer"
-              ></i
-            ></a>
-            <!-- Github -->
-            <a
-              href="https://github.com/pascaljk"
-              class="github"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/pascal_ntez" class="instagram"><i class="bx bxl-instagram"></i></a>
-            <!-- LinkedIn -->
-            <a
-              href="https://www.linkedin.com/in/pascaljk/"
-              class="linkedin"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="bx bxl-linkedin"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- .nav-menu -->
-        <nav id="navbar" class="nav-menu navbar">
+        <nav id="navbar" class="navbar">
           <ul>
-            <li>
-              <a href="#hero" class="nav-link scrollto active"
-                ><i class="bx bx-home"></i> <span>Home</span></a
-              >
-            </li>
-            <li>
-              <a href="#about" class="nav-link scrollto"
-                ><i class="bx bx-user"></i> <span>About</span></a
-              >
-            </li>
-            <li>
-              <a href="#resume" class="nav-link scrollto"
-                ><i class="bx bx-file-blank"></i> <span>Resume</span></a
-              >
-            </li>
-            <li>
-              <a href="#services" class="nav-link scrollto"
-                ><i class="bx bx-server"></i> <span>My Services</span></a
-              >
-            </li>
-            <li>
-              <a href="#portfolio" class="nav-link scrollto"
-                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
-              >
-            </li>
-            <li>
-              <a href="#contact" class="nav-link scrollto"
-                ><i class="bx bx-envelope"></i> <span>Contact</span></a
-              >
-            </li>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+            <li><a class="nav-link scrollto" href="#about">About</a></li>
+            <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
+            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+            <li><a class="nav-link scrollto" href="#portfolio">Work</a></li>
+            <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <!-- .nav-menu -->
+
+        <div class="header-actions">
+          <a
+            href="https://calendly.com/pascal-santos/30min"
+            class="btn btn-ghost"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Let's talk</a
+          >
+        </div>
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
       </div>
     </header>
     <!-- End Header -->
 
-    <main id="main">
-      <!-- ======= Hero Section ======= -->
-      <section id="hero" class="d-flex flex-column justify-content-center">
-        <div class="hero-container" data-aos="fade-in">
-          <h1>Discover My Innovative,</h1>
-          <h1 style="margin-bottom: 25px">Creative Work</h1>
-          <p>
-            I craft...
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-text" data-aos="fade-up">
+          <span class="eyebrow"
+            ><span class="dot"></span> Solutions Developer · Technical
+            Consultant</span
+          >
+          <h1>
+            Discover my <span class="grad">innovative</span><br />
+            &amp; creative work
+          </h1>
+          <p class="hero-typed">
+            I craft
             <span
               class="typed"
               data-typed-items="innovative solutions, tailored applications, Odoo &amp; ERP systems, cutting-edge prototypes, technology-driven solutions"
             ></span>
-            .
           </p>
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn btn-primary scrollto">
+              View my work <i class="bi bi-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-ghost scrollto">Get in touch</a>
+          </div>
+          <div class="hero-socials">
+            <a
+              href="https://github.com/pascaljk"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/pascaljk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/pascal_ntez"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://calendly.com/pascal-santos/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Calendly"
+              ><i class="bx bx-calendar"></i
+            ></a>
+          </div>
         </div>
-      </section>
-      <!-- End Hero -->
 
+        <div class="hero-visual" data-aos="zoom-in" data-aos-delay="150">
+          <div class="avatar-ring">
+            <img src="./assets/img/profile.jpg" alt="Pascal Ntezimana" />
+          </div>
+          <div class="chip chip-1"><i class="bx bxl-flutter"></i> Flutter</div>
+          <div class="chip chip-2"><i class="bi bi-diagram-3"></i> Odoo / ERP</div>
+          <div class="chip chip-3"><i class="bi bi-cpu"></i> .NET</div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator scrollto" aria-label="Scroll down">
+        <span class="mouse"><span></span></span>
+      </a>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
       <!-- ======= About Section ======= -->
-      <section id="about" class="about">
+      <section id="about" class="section about">
         <div class="container" id="about-container"></div>
       </section>
       <!-- End About Section -->
 
       <!-- ======= Skills Section ======= -->
-      <section
-        id="skills"
-        class="skills section-bg"
-        style="padding-bottom: 0px"
-      >
+      <section id="skills" class="section skills">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-up">
+            <span class="section-eyebrow">What I work with</span>
             <h2>Skills</h2>
             <p>
-              With every project I work on there's always something new to learn
-              or to improve on. Taking that in mind I gauged my skills based on
-              what I'm currently good at.
+              With every project there's always something new to learn or
+              improve on. These are the tools and strengths I rely on most.
             </p>
           </div>
 
-          <div class="row skills-content" data-aos="fade-up">
+          <div class="row skills-content" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-6"></div>
             <div class="col-lg-6"></div>
           </div>
@@ -198,69 +205,59 @@
       <!-- End Skills Section -->
 
       <!-- Stats Section -->
-      <section id="stats" class="stats section-bg" style="padding-top: 0px">
-        <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <section id="stats" class="section stats">
+        <div class="container" data-aos="fade-up">
           <div class="row gy-4" id="stats-container"></div>
         </div>
       </section>
       <!-- /Stats Section -->
 
       <!-- ======= Resume Section ======= -->
-      <section id="resume" class="resume">
+      <section id="resume" class="section resume">
         <div class="container" id="resume-container"></div>
       </section>
       <!-- End Resume Section -->
 
-      <!-- ======= My Services ======= -->
-      <section id="services" class="services">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>My Services</h2>
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="section services">
+        <div class="container">
+          <div class="section-title" data-aos="fade-up">
+            <span class="section-eyebrow">How I can help</span>
+            <h2>Services</h2>
             <p>
-              Explore the range of services I offer, crafted to deliver
-              exceptional results with my expertise.
+              A range of services crafted to deliver exceptional results, from
+              first concept to a product that ships.
             </p>
           </div>
 
           <div id="services-container" class="row"></div>
 
-          <p>
-            Click
+          <p class="services-flyer" data-aos="fade-up">
+            Want the overview?
             <a
               href="https://firebasestorage.googleapis.com/v0/b/iportfolio-70a2f.appspot.com/o/Resume%2Fmy%20flyer%20final.jpg?alt=media&token=cf4bbca6-3a35-4903-bb9e-f2aa79f0008f"
               download="my_resume_pdf_file"
               target="_blank"
               rel="noopener noreferrer"
             >
-              here
-            </a>
-            to download a flyer of my services.
+              Download my services flyer </a
+            >.
           </p>
         </div>
       </section>
       <!-- End Services Section -->
 
       <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio section-bg">
+      <section id="portfolio" class="section portfolio">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-up">
+            <span class="section-eyebrow">Selected work</span>
             <h2>Portfolio</h2>
             <p>
               A showcase of standout projects that highlight my expertise and
               creativity.
             </p>
           </div>
-
-          <!-- // TODO Need to be able to filter the projects-->
-          <!-- <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">Apps</li>
-                <li data-filter=".filter-game">Games</li>
-              </ul>
-            </div>
-          </div> -->
 
           <div
             id="portfolio-container"
@@ -273,32 +270,32 @@
       <!-- End Portfolio Section -->
 
       <!-- ======= Contact Section ======= -->
-      <section id="contact" class="contact">
+      <section id="contact" class="section contact">
         <div class="container">
-          <div class="section-title">
+          <div class="section-title" data-aos="fade-up">
+            <span class="section-eyebrow">Say hello</span>
             <h2 id="contact-title"></h2>
             <p id="contact-description"></p>
           </div>
 
-          <button class="button" style="margin-bottom: 15px">
-            <i class="bi bi-envelope"></i
-            ><span class="text" id="contact-email"></span>
-          </button>
-          <button class="button">
-            <i class="bi bi-phone"></i
-            ><span class="text" id="contact-phone"></span>
-          </button>
-        </div>
+          <div class="contact-actions" data-aos="fade-up" data-aos-delay="100">
+            <button class="button">
+              <i class="bi bi-envelope"></i
+              ><span class="text" id="contact-email"></span>
+            </button>
+            <button class="button">
+              <i class="bi bi-phone"></i
+              ><span class="text" id="contact-phone"></span>
+            </button>
+          </div>
 
-        <!-- Map -->
-        <div class="container-xxl pt-5 px-0">
-          <div class="bg-dark">
+          <!-- Map -->
+          <div class="map-wrap" data-aos="fade-up" data-aos-delay="150">
             <iframe
               id="contact-map"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               frameborder="0"
-              style="width: 100%; height: 450px; border: 0"
               allowfullscreen=""
               aria-hidden="false"
               tabindex="0"
@@ -311,14 +308,22 @@
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer">
-      <div class="container">
-        <div class="copyright">
-          &copy; <strong><span>LacsAPP</span></strong>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="#hero" class="brand scrollto">Pascal<span>Ntezimana</span></a>
+        <div class="footer-socials">
+          <a href="https://github.com/pascaljk" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/pascaljk/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.instagram.com/pascal_ntez" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://calendly.com/pascal-santos/30min" target="_blank" rel="noopener noreferrer" aria-label="Calendly"><i class="bx bx-calendar"></i></a>
         </div>
+        <p class="copyright">
+          © <span id="year"></span> <strong>Pascal Ntezimana</strong> ·
+          <span>LacsAPP</span>
+        </p>
       </div>
     </footer>
-    <!-- End  Footer -->
+    <!-- End Footer -->
 
     <a
       href="#"
@@ -329,15 +334,12 @@
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
-    <!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <!-- <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script> -->
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <!-- <script src="assets/vendor/php-email-form/validate.js"></script> -->
 
-    <!-- Main JS File -->
+    <!-- Data + Main JS -->
     <script src="assets/js/bio.js"></script>
     <script src="assets/js/contact.js"></script>
     <script src="assets/js/resume.js"></script>
@@ -346,5 +348,20 @@
     <script src="assets/js/services.js"></script>
     <script src="assets/js/portfolio.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- Lightweight UI enhancements (header scroll state + year) -->
+    <script>
+      (function () {
+        var header = document.getElementById("header");
+        var onScroll = function () {
+          if (window.scrollY > 24) header.classList.add("scrolled");
+          else header.classList.remove("scrolled");
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        window.addEventListener("load", onScroll);
+        var y = document.getElementById("year");
+        if (y) y.textContent = new Date().getFullYear();
+      })();
+    </script>
   </body>
 </html>

@@ -59,9 +59,11 @@
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
+    let header = select('#header')
+    let offset = header ? header.offsetHeight : 0
     let elementPos = select(el).offsetTop
     window.scrollTo({
-      top: elementPos,
+      top: elementPos - offset,
       behavior: 'smooth'
     })
   }
